@@ -36,7 +36,7 @@ export default function Home() {
         <HoroscopeCard title={title} data={data} loading={isLoading}/>
       </div>
       <div className='mt-28 flex flex-col gap-10 justify-center items-center'>
-        <div className='flex gap-8 flex-row justify-center items-center'>
+        <div className='flex gap-8 lg:flex-row justify-center items-center sm:flex-col'>
           <HoroscopeIcon title='Aries' imgSRC={aries} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
           <HoroscopeIcon title='Taurus' imgSRC={taurus} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
           <HoroscopeIcon title='Gemini' imgSRC={gemini} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
@@ -44,7 +44,7 @@ export default function Home() {
           <HoroscopeIcon title='Leo' imgSRC={leo} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
           <HoroscopeIcon title='Virgo' imgSRC={virgo} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
         </div>
-        <div className='flex gap-8 flex-row justify-center items-center'>
+        <div className='flex gap-8 lg:flex-row justify-center items-center sm:flex-col'>
           <HoroscopeIcon title='Libra' imgSRC={libra} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
           <HoroscopeIcon title='Scorpio' imgSRC={scorpio} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
           <HoroscopeIcon title='Sagittarius' imgSRC={sagitarius} sendTitleToParent={getTitleFromChild} sendDataToParent={getDataFromChild}/>
