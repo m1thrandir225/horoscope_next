@@ -26,7 +26,7 @@ export default function HoroscopeIcon({ title, imgSRC, sendTitleToParent, setDat
     }, [componentTitle, setData, setLoading, setError])
 
     return(
-        <div className="w-auto" onClick={() => {changeTitle(title); sendTitleToParent(title);}}>
+        <div className="lg:w-auto xs:w-46" onClick={() => {changeTitle(title); sendTitleToParent(title);}}>
             <Image className="hover:bg-indigo-900/[.09] drop-shadow-lg" alt={componentTitle} src={imgSRC} layout='intrinsic'/>
         </div>
     )

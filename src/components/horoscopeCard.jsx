@@ -18,10 +18,10 @@ export default function HoroscopeCard({title, data, loading}) {
         </div>
         } else {
             return <div className="flex flex-col justify-center items-center">
-                <h1 className="underline text-5xl font-bold">{title}</h1>
+                <h1 className="md:underline text-5xl font-bold xs:text-3xl underline text-center">{title}</h1>
             </div>
         }
-    }   
+    }
     return(
         <div></div>
     )

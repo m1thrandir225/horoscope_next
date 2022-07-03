@@ -20,6 +20,7 @@ export default function Home() {
   const [title, setTitle] = useState("Select a sign to continue: ");
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const getTitleFromChild = (index) => {
     // the callback. Use a better name
     setTitle(index);
@@ -33,13 +34,14 @@ export default function Home() {
         <HoroscopeCard title={title} data={data} loading={isLoading} />
       </div>
       <div className="mt-28 flex flex-col gap-10 justify-center items-center">
-        <div className="flex gap-8 lg:flex-row justify-center items-center sm:flex-col">
+        <div className="flex gap-8 lg:flex-row justify-center items-center xs:flex-col">
           <HoroscopeIcon
             title="Aries"
             imgSRC={aries}
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Taurus"
@@ -47,6 +49,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Gemini"
@@ -54,6 +57,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Cancer"
@@ -61,6 +65,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Leo"
@@ -68,6 +73,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Virgo"
@@ -77,13 +83,14 @@ export default function Home() {
             setLoading={setLoading}
           />
         </div>
-        <div className="flex gap-8 lg:flex-row justify-center items-center sm:flex-col">
+        <div className="flex gap-8 lg:flex-row justify-center items-center xs:flex-col">
           <HoroscopeIcon
             title="Libra"
             imgSRC={libra}
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Scorpio"
@@ -91,6 +98,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Sagittarius"
@@ -98,6 +106,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Capricorn"
@@ -105,6 +114,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Aquarius"
@@ -112,6 +122,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
           <HoroscopeIcon
             title="Pisces"
@@ -119,6 +130,7 @@ export default function Home() {
             sendTitleToParent={getTitleFromChild}
             setData={setData}
             setLoading={setLoading}
+            setError={setError}
           />
         </div>
       </div>
