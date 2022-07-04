@@ -19,6 +19,7 @@ export default function HoroscopeIcon({title, imgSRC}) {
       } catch (err) {
         dispatch(setError(err));
       } finally {
+        window.scrollTo(0, 0)
         dispatch(setLoading(false));
       }
     }
