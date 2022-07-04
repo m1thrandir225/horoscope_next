@@ -28,8 +28,8 @@ export default function Home() {
       <div className="mt-8">
         <HoroscopeCard data={data} title={title} loading={loading}/>
       </div>
-      <div className="mt-28 flex flex-col gap-10 justify-center items-center">
-        <div className="flex gap-8 lg:flex-row justify-center items-center xs:flex-col">
+      <div className="mt-24 flex flex-col gap-10 justify-center items-center bg-indigo-100 ">
+        <div className="flex gap-8 lg:flex-row justify-center items-center xs:flex-col ">
           <HoroscopeIcon
             title="Aries"
             imgSRC={aries}
@@ -55,7 +55,7 @@ export default function Home() {
             imgSRC={virgo}
           />
         </div>
-        <div className="flex gap-8 lg:flex-row justify-center items-center xs:flex-col">
+        <div className="flex gap-8 pb-4  lg:flex-row justify-center items-center xs:flex-col">
           <HoroscopeIcon
             title="Libra"
             imgSRC={libra}
