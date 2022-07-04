@@ -21,7 +21,7 @@ export default function Home() {
   const loading = useSelector((state) => state.data.loading);
   const data = useSelector((state) => state.data.data);
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex flex-col h-screen justify-between bg-indigo-100">
       <Head>
         <title> Daily Horoscope </title>
       </Head>

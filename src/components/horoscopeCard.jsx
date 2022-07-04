@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
 export default function HoroscopeCard({data, title, loading }) {
-    const color = data.color;
     if (loading) {
         return <div className="text-center">Loading..</div>
     } else {
@@ -13,7 +12,7 @@ export default function HoroscopeCard({data, title, loading }) {
             <p className="w-80 mt-8 mb-8 bg-indigo-900/[.2] rsounded p-4 text-center "> {data.description}</p>
             <p>Mood: {data.mood}</p>
             <p>Lucky Number: {data.lucky_number} </p>
-            <p style={{color: `${color}`}}>Color: {data.color} </p>
+            <p>Color: {data.color} </p>
             <p>Compatbility: {data.compatibility}</p>
         </div>
         } else {
